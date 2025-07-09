@@ -16,5 +16,7 @@ describe('Login Page - fixture test user', () => {
     cy.get('#password').type(validUser.password);
     cy.get('#login-button').click();
 
+    cy.url().should('include', '/inventory.html'); 
+
   })
 })
